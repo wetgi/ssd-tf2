@@ -29,8 +29,8 @@ args = parser.parse_args()
 
 os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu_id
 
-NUM_CLASSES = 21
-BATCH_SIZE = 1
+NUM_CLASSES = 2
+BATCH_SIZE = 4
 
 
 def predict(imgs, default_boxes):

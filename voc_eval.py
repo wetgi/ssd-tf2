@@ -133,26 +133,8 @@ def voc_eval(det_path, anno_path, cls_name, iou_thresh=0.5, use_07_metric=False)
 
 if __name__ == '__main__':
     aps = {
-        'aeroplane': 0.0,
-        'bicycle': 0.0,
-        'bird': 0.0,
-        'boat': 0.0,
-        'bottle': 0.0,
-        'bus': 0.0,
-        'car': 0.0,
-        'cat': 0.0,
-        'chair': 0.0,
-        'cow': 0.0,
-        'diningtable': 0.0,
-        'dog': 0.0,
-        'horse': 0.0,
-        'motorbike': 0.0,
-        'person': 0.0,
-        'pottedplant': 0.0,
-        'sheep': 0.0,
-        'sofa': 0.0,
-        'train': 0.0,
-        'tvmonitor': 0.0,
+        '0': 0.0,
+        '1': 0.0,
         'mAP': []
     }
     for cls_name in aps.keys():
