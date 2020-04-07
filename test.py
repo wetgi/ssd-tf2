@@ -29,8 +29,8 @@ args = parser.parse_args()
 
 os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu_id
 
-NUM_CLASSES = 2
-BATCH_SIZE = 4
+NUM_CLASSES = 3
+BATCH_SIZE = 1
 
 
 def predict(imgs, default_boxes):
@@ -53,8 +53,6 @@ def predict(imgs, default_boxes):
         cls_scores = confs[:, c]
 
         score_idx = cls_scores > 0.6
-        # cls_boxes = tf.boolean_mask(boxes, score_idx)
-        # cls_scores = tf.boolean_mask(cls_scores, score_idx)
         cls_boxes = boxes[score_idx]
         cls_scores = cls_scores[score_idx]
 

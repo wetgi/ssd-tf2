@@ -134,7 +134,7 @@ class VOCDataset():
 
             img = np.array(img.resize(
                 (self.new_size, self.new_size)), dtype=np.float32)
-            img = (img / 127.0) - 1.0
+            img /= 255.0 
             img = tf.constant(img, dtype=tf.float32)
 
             gt_confs, gt_locs = compute_target(
