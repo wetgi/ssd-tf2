@@ -135,6 +135,8 @@ if __name__ == '__main__':
     aps = {
         '0': 0.0,
         '1': 0.0,
+        '2': 0.0,
+        '3': 0.0,
         'mAP': []
     }
     for cls_name in aps.keys():

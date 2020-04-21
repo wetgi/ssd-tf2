@@ -23,7 +23,7 @@ class VOCDataset():
     def __init__(self, root_dir, year, default_boxes,
                  new_size, num_examples=-1, augmentation=None):
         super(VOCDataset, self).__init__()
-        self.idx_to_name = ['0', '1']
+        self.idx_to_name = ['0', '1', '2', '3']
         self.name_to_idx = dict([(v, k)
                                  for k, v in enumerate(self.idx_to_name)])
 
